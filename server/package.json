@@ -4,7 +4,9 @@
   "description": "E-commerce webapp.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "engines": {
     "node": ">=22.14.0"
@@ -16,7 +18,7 @@
   "author": "feralCode0x",
   "license": "ISC",
 
-  "homepage": "#",
+  "homepage": "https://github.com/feralCode0x/commercy",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "braintree": "^3.0.0",
