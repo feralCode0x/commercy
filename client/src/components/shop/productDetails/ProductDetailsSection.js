@@ -80,7 +80,7 @@ const ProductDetailsSection = (props) => {
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
         >
           <path
             strokeLinecap="round"
@@ -143,7 +143,7 @@ const ProductDetailsSection = (props) => {
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="https://www.w3.org/2000/svg"
                 >
                   <path
                     strokeLinecap="round"
@@ -160,7 +160,7 @@ const ProductDetailsSection = (props) => {
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="https://www.w3.org/2000/svg"
                 >
                   <path
                     strokeLinecap="round"
@@ -188,7 +188,7 @@ const ProductDetailsSection = (props) => {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="https://www.w3.org/2000/svg"
                   >
                     <path
                       strokeLinecap="round"
@@ -204,7 +204,7 @@ const ProductDetailsSection = (props) => {
                     } w-5 h-5 md:w-6 md:h-6 cursor-pointer text-yellow-700`}
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="https://www.w3.org/2000/svg"
                   >
                     <path
                       fillRule="evenodd"
@@ -258,7 +258,7 @@ const ProductDetailsSection = (props) => {
                             className="w-5 h-5 fill-current cursor-pointer"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns="https://www.w3.org/2000/svg"
                           >
                             <path
                               fillRule="evenodd"
@@ -283,7 +283,7 @@ const ProductDetailsSection = (props) => {
                             className="w-5 h-5 fill-current cursor-pointer"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns="https://www.w3.org/2000/svg"
                           >
                             <path
                               fillRule="evenodd"
@@ -300,7 +300,7 @@ const ProductDetailsSection = (props) => {
                             className="w-5 h-5 fill-current cursor-not-allowed"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns="https://www.w3.org/2000/svg"
                           >
                             <path
                               fillRule="evenodd"
@@ -315,7 +315,7 @@ const ProductDetailsSection = (props) => {
                             className="w-5 h-5 fill-current cursor-not-allowed"
                             fill="currentColor"
                             viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns="https://www.w3.org/2000/svg"
                           >
                             <path
                               fillRule="evenodd"
@@ -334,7 +334,7 @@ const ProductDetailsSection = (props) => {
                         className="w-5 h-5 fill-current cursor-not-allowed"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns="https://www.w3.org/2000/svg"
                       >
                         <path
                           fillRule="evenodd"
@@ -349,7 +349,7 @@ const ProductDetailsSection = (props) => {
                         className="w-5 h-5 fill-current cursor-not-allowed"
                         fill="currentColor"
                         viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns="https://www.w3.org/2000/svg"
                       >
                         <path
                           fillRule="evenodd"

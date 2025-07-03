@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import axios from "axios";
 const apiURL = process.env.REACT_APP_API_URL;
 
@@ -8,14 +9,14 @@ const BearerToken = () =>
 const Headers = () => {
   return {
     headers: {
-      token: `Bearer ${BearerToken()}`,
+         Authorization: `Bearer ${BearerToken()}`,
     },
   };
 };
 
 export const getAllCategory = async () => {
   try {
-    let res = await axios.get(`${apiURL}/api/category/all-category`, Headers());
+    let res = await axios.get(`${apiURL}/api/category/all-category`, { mode: 'cors' }, Headers());
     return res.data;
   } catch (error) {
     console.log(error);
@@ -71,4 +72,23 @@ export const deleteCategory = async (cId) => {
   } catch (error) {
     console.log(error);
   }
+};
+
+function useSetData() {
+ const [isLoading, setIsLoading] = useState(true);  
+ useEffect(() => {
+        const fetchData = async () => {
+            try {
+                // Simulate API call
+                await new Promise(resolve => setTimeout(resolve, 9000)); 
+                // Process data
+                setIsLoading(false);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+                setIsLoading(false); // Set to false even on error
+            }
+        };
+
+        fetchData();
+    }, []); // Empty dependency array means it runs once on mount
 };

@@ -1,18 +1,18 @@
-const mongoose = require("mongoose");
+import { ServerApiVersion } from "mongodb";
+import mongoose from "mongoose";
 
-async function connect() {
-try {
-  mongoose.connect('process.env.DATABASE', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  });
-  console.log("Database Connected Successfully");
-} catch (err) {
-  console.log("Database Not Connected");
+async function connectDB() {
+    try {
+    await mongoose.connect(process.env.DATABASE, {
+    
+  }).then(() =>
+    console.log(
+      "==============Mongodb Database Connected Successfully=============="
+    )
+  ).catch((err) => console.log("Database Not Connected !!!"));
+} catch(error) {
+    console.error('Error connercting to MongoDB', error);
+    }
 }
-setTimeout(function() {
-  mongoose.connect('process.env.DATABASE');
-}, 60000);
+connectDB();
 
-}

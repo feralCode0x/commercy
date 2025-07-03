@@ -58,7 +58,7 @@ const AllCategory = (props) => {
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
         >
           <path
             strokeLinecap="round"
@@ -175,7 +175,7 @@ const CategoryTable = ({ category, deleteCat, editCat }) => {
               className="w-6 h-6 fill-current text-green-500"
               fill="currentColor"
               viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
             >
               <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
               <path
@@ -193,7 +193,7 @@ const CategoryTable = ({ category, deleteCat, editCat }) => {
               className="w-6 h-6 fill-current text-red-500"
               fill="currentColor"
               viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
             >
               <path
                 fillRule="evenodd"

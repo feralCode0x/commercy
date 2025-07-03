@@ -1,24 +1,17 @@
 {
-  "name": "Commercy",
+  "name": "commercy",
   "version": "1.0.0",
   "description": "E-commerce webapp.",
   "main": "app.js",
+  "homepage": "https://commercy.classisfoto.com",
   "scripts": {
-    "start": "node app.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "pm2 start app.js"
   },
   "engines": {
     "node": ">=22.14.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/feralCode0x/commercy"
-  },
-  "author": "feralCode0x",
   "license": "ISC",
-
-  "homepage": "https://github.com/feralCode0x/commercy",
+ 
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "braintree": "^3.0.0",
@@ -28,10 +21,24 @@
     "express": "^5.1.0",
     "i": "^0.3.6",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^5.9.27",
+    "mongoose": "8.15.1",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.2",
     "nodemon": "^3.1.10",
-    "npm": "^11.3.0"
+    "npm": "^11.3.0",
+    "pm2": "^6.0.8"
+  },
+  
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 2 safari version"
+    ]
   }
 }

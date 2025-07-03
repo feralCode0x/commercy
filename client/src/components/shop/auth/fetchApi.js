@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import axios from "axios";
 const apiURL = process.env.REACT_APP_API_URL;
 
@@ -28,3 +29,22 @@ export const signupReq = async ({ name, email, password, cPassword }) => {
     console.log(error);
   }
 };
+
+function useSetData() {
+ const [isLoading, setIsLoading] = useState(true);  
+ useEffect(() => {
+        const fetchData = async () => {
+            try {
+                // Simulate API call
+                await new Promise(resolve => setTimeout(resolve, 9000)); 
+                // Process data
+                setIsLoading(false);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+                setIsLoading(false); // Set to false even on error
+            }
+        };
+
+        fetchData();
+    }, []); // Empty dependency array means it runs once on mount
+}

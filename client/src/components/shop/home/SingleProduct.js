@@ -44,7 +44,7 @@ const SingleProduct = (props) => {
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
         >
           <path
             strokeLinecap="round"
@@ -80,7 +80,7 @@ const SingleProduct = (props) => {
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns="https://www.w3.org/2000/svg"
                       >
                         <path
                           strokeLinecap="round"
@@ -106,7 +106,7 @@ const SingleProduct = (props) => {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="https://www.w3.org/2000/svg"
                   >
                     <path
                       strokeLinecap="round"
@@ -122,7 +122,7 @@ const SingleProduct = (props) => {
                     } w-5 h-5 md:w-6 md:h-6 cursor-pointer text-yellow-700 transition-all duration-300 ease-in`}
                     fill="currentColor"
                     viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns="https://www.w3.org/2000/svg"
                   >
                     <path
                       fillRule="evenodd"

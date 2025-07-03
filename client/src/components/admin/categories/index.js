@@ -6,7 +6,6 @@ import { categoryState, categoryReducer } from "./CategoryContext";
 
 /* This context manage all of the caregories component's data */
 export const CategoryContext = createContext();
-
 const CategoryComponent = () => {
   return (
     <div className="grid grid-cols-1 space-y-4 p-4">

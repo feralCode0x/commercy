@@ -23,7 +23,7 @@ const AllCategory = (props) => {
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
         >
           <path
             strokeLinecap="round"
@@ -95,15 +95,15 @@ const CategoryTable = ({ order, editOrder }) => {
     <Fragment>
       <tr className="border-b">
         <td className="w-48 hover:bg-gray-200 p-2 flex flex-col space-y-1">
-          {order.allProduct.map((product, i) => {
+          {order?.allProduct?.map((product, i) => {
             return (
               <span className="block flex items-center space-x-2" key={i}>
                 <img
                   className="w-8 h-8 object-cover object-center"
-                  src={`${apiURL}/uploads/products/${product.id.pImages[0]}`}
+                  src={`${apiURL}/uploads/products/${product?.id?.pImages[0]}`}
                   alt="productImage"
                 />
-                <span>{product.id.pName}</span>
+                <span>{product?.id?.pName}</span>
                 <span>{product.quantitiy}x</span>
               </span>
             );
@@ -163,7 +163,7 @@ const CategoryTable = ({ order, editOrder }) => {
               className="w-6 h-6 fill-current text-green-500"
               fill="currentColor"
               viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
             >
               <path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />
               <path
@@ -182,7 +182,7 @@ const CategoryTable = ({ order, editOrder }) => {
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
             >
               <path
                 strokeLinecap="round"
