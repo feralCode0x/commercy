@@ -24,8 +24,9 @@
     "react-scripts": "5.0.0"
   },
   "scripts": {
-    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider&&HTTPS=true HOST=100.115.92.206 PORT=3000 SSL_CRT_FILE=./cert/commercy.classisfoto.com+5.pem SSL_KEY_FILE=./cert/commercy.classisfoto.com+5-key.pem react-app-rewired start",
-    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider&&HTTPS=true HOST=100.115.92.206 PORT=3000 SSL_CRT_FILE=./cert/commercy.classisfoto.com+5.pem SSL_KEY_FILE=./cert/commercy.classisfoto.com+5-key.pem react-app-rewired build",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider&&HTTPS=true HOST=100.115.92.206 PORT=3000 SSL_CRT_FILE=./cert/commercy.classisfoto.com+5.pem SSL_KEY_FILE=./cert/commercy.classisfoto.com+5-key.pem REACT_APP_API_ENDPOINT=https://100.115.92.206:8000 react-app-rewired start",
+    "start-production": "export SET NODE_OPTIONS=--openssl-legacy-provider&&HTTPS=true HOST=100.115.92.206 PORT=3000 SSL_CRT_FILE=./cert/commercy.classisfoto.com+5.pem SSL_KEY_FILE=./cert/commercy.classisfoto.com+5-key.pem REACT_APP_API_ENDPOINT=https://100.115.92.206:8000 react-app-rewired start",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider&&HTTPS=true HOST=100.115.92.206 PORT=3000 SSL_CRT_FILE=./cert/commercy.classisfoto.com+5.pem SSL_KEY_FILE=./cert/commercy.classisfoto.com+5-key.pem REACT_APP_API_ENDPOINT=https://100.115.92.206:8000 react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
